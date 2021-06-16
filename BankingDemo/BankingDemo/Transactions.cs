@@ -17,13 +17,10 @@ namespace BankingDemo
             this.Date = date;
             this.Notes = note;
         }
-
         public List<Transaction> allTransactions = new List<Transaction>();
-
         public string GetAccountHistory()
         {
             var report = new System.Text.StringBuilder();
-
             double balance = 0;
             report.AppendLine("Date\t\tAmount\tBalance\tNote");
             foreach (var item in allTransactions)
@@ -31,7 +28,6 @@ namespace BankingDemo
                 balance += item.Amount;
                 report.AppendLine($"{item.Date.ToShortDateString()}\t{item.Amount}\t{balance}\t{item.Notes}");
             }
-
             return report.ToString();
         }
     }

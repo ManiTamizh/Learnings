@@ -25,7 +25,6 @@ namespace BankingDemo
 			Console.WriteLine("The Balance after Debiting from Savings Account is " + savBankAcc.CalcBalanceAmount());
             Console.WriteLine("The list of transactions for saving account:");
             savBankAcc.listofTransactions.ForEach(Console.WriteLine);
-
             BankAccount chkBankAcc = new CheckingAccount
 			{
 				AccountNumber = 1006,
@@ -41,11 +40,6 @@ namespace BankingDemo
             Console.WriteLine("The Balance after Debiting from Checking Account is " + chkBankAcc.CalcBalanceAmount());
             Console.WriteLine("The list of transactions for Checking account:");
             chkBankAcc.listofTransactions.ForEach(Console.WriteLine);
-
-
-            Console.ReadLine();
-
-			
 		}
 	}
 }
