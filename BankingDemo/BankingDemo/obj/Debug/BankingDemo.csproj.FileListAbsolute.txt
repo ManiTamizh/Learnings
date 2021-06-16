@@ -1,0 +1,6 @@
+C:\Users\40014874\source\repos\BankingDemo\BankingDemo\bin\Debug\BankingDemo.exe
+C:\Users\40014874\source\repos\BankingDemo\BankingDemo\bin\Debug\BankingDemo.pdb
+C:\Users\40014874\source\repos\BankingDemo\BankingDemo\obj\Debug\BankingDemo.csprojAssemblyReference.cache
+C:\Users\40014874\source\repos\BankingDemo\BankingDemo\obj\Debug\BankingDemo.csproj.CoreCompileInputs.cache
+C:\Users\40014874\source\repos\BankingDemo\BankingDemo\obj\Debug\BankingDemo.exe
+C:\Users\40014874\source\repos\BankingDemo\BankingDemo\obj\Debug\BankingDemo.pdb
