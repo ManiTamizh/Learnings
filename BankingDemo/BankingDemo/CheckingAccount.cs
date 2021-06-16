@@ -12,7 +12,9 @@ namespace BankingDemo
         {
             transactionFee = amount * 0.025;
             BalanceAmount -= amount + transactionFee;
-            listofTransactions.Add(3, amount);
+            listofTransactions.Add(amount);
+            Console.WriteLine("The debited amount is "+amount);
+            Console.WriteLine("The transaction fee 2.5% for the debited amount is " + transactionFee);
             return BalanceAmount;
         }
     }

@@ -6,34 +6,26 @@ using System.Threading.Tasks;
 
 namespace BankingDemo
 {
-    public class BankAccount
+    public abstract class BankAccount
     {
         public double transactionFee;
         public int AccountNumber { get; set; }
 
         public List<string> Accountname = new List<string>();
-        public string AccountDate { get; set; }
+        public DateTime AccountDate { get; set; }
         public double BalanceAmount { get; set; }
 
-        public Dictionary<int, double> listofTransactions = new Dictionary<int, double>();
-       
-
-        public virtual double Debit(double amount)
-        {
-            BalanceAmount -= amount;
-            listofTransactions.Add(1, amount);
-            
-            return BalanceAmount;
-        }
-
+        public List<double> listofTransactions = new List<double>();
+        public abstract double Debit(double amount);
         public virtual void Credit(double amount)
         {
             BalanceAmount += amount;
-            listofTransactions.Add(2, amount);
+            listofTransactions.Add(amount);
         }
 
         public virtual double CalcBalanceAmount()
         {
+            listofTransactions.Add(BalanceAmount);
             return BalanceAmount;
             
         }
